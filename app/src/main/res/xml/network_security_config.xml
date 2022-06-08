@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.28.114.24</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">localhost:59643</domain>
+        <domain includeSubdomains="true">http://localhost:59643/</domain>
+        <domain includeSubdomains="true">http://localhost:59643/api/login</domain>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginviewroot"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ingreso.LoginActivity">
+
+    <TextView
+        android:id="@+id/txtIngresarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_texto"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etUsuario"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.Coppel.Textview.Title.Azul.White"
+        />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login_usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngresarDatos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        android:importantForAutofill="no"
+        style="@style/Widget.Coppel.Edittext.Primary.White"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login_contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        android:importantForAutofill="no"
+        style="@style/Widget.Coppel.Edittext.Primary.White"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_boton"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/txtResult"
+        style="@style/Widget.Coppel.Button.Primary.White"
+        />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_500"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

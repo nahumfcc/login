@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ingreso.NombreModuloActivity">
+
+    <!---Borrar comentarios
+    Usando un control de android normalmente y aplicando
+        el estilo de Widget.Coppel de la librería UI
+        puedes cambiar los atributos desde este archivo xml
+    -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/componentes_de_la_librer_a_ui_aar"
+        style="@style/Widget.Coppel.Textview.Title.Azul.White"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/boton_usando_estilo_de_librer_a"
+        style="@style/Widget.Coppel.Button.Primary.White"
+        android:textAllCaps="false"
+        />
+
+    <!---Borrar comentarios
+    Los controles de com.coppel.framework.ui.view
+        de la librería UI solo permiten cambiar sus
+        atributos en el archivo .java(programaticamente)
+    -->
+
+    <com.coppel.framework.ui.view.buttons.PrimaryButton
+        android:id="@+id/btn_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+
+    <com.coppel.framework.ui.view.buttons.OutlineButton
+        android:id="@+id/btn_outline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        />
+
+    <com.coppel.framework.ui.view.spinners.PrimarySpinnerStroke
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.coppel.framework.ui.view.edittexts.PrimaryEditTextStroke
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <com.coppel.framework.ui.view.edittexts.PasswordEditTextStroke
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"/>
+
+
+    <com.coppel.framework.ui.view.edittexts.TextInputPasswordEditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+
+    <com.coppel.framework.ui.view.edittexts.TextInputMultiLineEditText
+        android:id="@+id/edt_input_multiline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/first"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+        <RadioButton
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Coppel.RadioButton.Primary.Blue"/>
+        <RadioButton
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Coppel.RadioButton.Primary.Blue"/>
+    </RadioGroup>
+
+</LinearLayout>

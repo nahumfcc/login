@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">login</string>
+
+    <string name="login_texto">Colaborador digital</string>
+    <string name="login_usuario">Usuario</string>
+    <string name="login_contraseña">Contraseña</string>
+    <string name="login_boton">Ingresar</string>
+
+    <string name="componentes_de_la_librer_a_ui_aar">Componentes de la librería UI.aar</string>
+    <string name="boton_usando_estilo_de_librer_a">Boton normal con estilo de la librería UI.aar</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>
