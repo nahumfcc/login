@@ -1,11 +1,14 @@
 package com.coppel.login.ingreso
 
+import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.coppel.login.MenuActivity
 import com.coppel.login.R
 import com.coppel.login.entities.UserLoginRequest
 import com.coppel.login.entities.UserModel
@@ -38,8 +41,11 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this@LoginActivity, "Failed to loggin user", Toast.LENGTH_LONG).show()
             }
             else{
+                //guardar sesión
                 Toast.makeText(this@LoginActivity, "Succesfully loggin user", Toast.LENGTH_LONG).show()
                 txtResult.text ="Bienvenido ${it.data.usuario} : ${it.data.nombre} ${it.data.apellidoPaterno} ${it.data.apellidoMaterno}"
+                //intent = Intent(this, NombreModuloActivity::class.java)
+                startActivity(Intent(this, NombreModuloActivity::class.java))
             }
         })
     }

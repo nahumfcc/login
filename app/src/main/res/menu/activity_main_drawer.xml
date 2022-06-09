@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_divider_cedis"
+            android:title="@string/menu_divider_cedis">
+            <menu>
+                <item
+                    android:id="@+id/nav_agregar_doctos"
+                    android:title="@string/menu_agregar_doctos" />
+                <item
+                    android:id="@+id/nav_generacion_bitacora"
+                    android:title="@string/menu_generacion_bitacora" />
+                <item
+                    android:id="@+id/nav_cancelacion_bitacora"
+                    android:title="@string/menu_cancelacion_bitacora" />
+                <item
+                    android:id="@+id/nav_liquidar_bitacora"
+                    android:title="@string/menu_liquidar_bitacora" />
+            </menu>
+        </item>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/menu_divider_consultaQR"
+            android:title="@string/menu_divider_consultaQR">
+        <menu>
+            <item
+                android:id="@+id/nav_consulta_QR"
+                android:title="@string/menu_consulta_QR" />
+        </menu>
+        </item>
+    </group>
+    <group>
+        <item
+            android:id="@+id/menu_divider_saldos"
+            android:title="@string/menu_divider_saldos">
+            <menu>
+                <item
+                    android:id="@+id/nav_saldos"
+                    android:title="@string/menu_saldos" />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item
+            android:id="@+id/menu_divider_salir"
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/loginActivity"
+                    android:icon="@drawable/ic_close_azul"
+                    android:title="@string/menu_salir" />
+            </menu>
+        </item>
+    </group>
+</menu>

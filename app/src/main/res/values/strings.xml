@@ -16,7 +16,23 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home">home</string>
+    <string name="menu_gallery">gallery</string>
+    <string name="menu_slideshow">slideshow</string>
+
+    <string name="menu_agregar_doctos">- Agregar doctos. a Bitacorar</string>
+    <string name="menu_generacion_bitacora">- Generación de bitácora</string>
+    <string name="menu_cancelacion_bitacora">- Cancelación de bitácora</string>
+    <string name="menu_liquidar_bitacora">- Liquidar bitácora en destino</string>
+    <string name="menu_consulta_QR">- Consulta de QR\'s</string>
+    <string name="menu_saldos">- Timbrar Saldos</string>
+    <string name="menu_salir">Cerrar sesión</string>
+
+    <string name="menu_divider_cedis">CEDIS Cross bitacora</string>
+    <string name="menu_divider_consultaQR">Consulta QR</string>
+    <string name="menu_divider_saldos">Saldos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
